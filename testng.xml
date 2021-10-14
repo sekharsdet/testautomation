@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Shopping Cart" parallel="classes" thread-count="10">
+    <test name="Shopping Cart UI tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="os" value="windows"/>
+        <classes>
+            <class name="com.ztech.tests.ShoppingCartTests"/>
+        </classes>
+    </test>
+</suite>
