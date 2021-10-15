@@ -26,6 +26,12 @@ jobs:
       - run:
           name: Test
           command: mvn clean test allure:report -D suiteXmlFile=testng.xml -D url=https://react-shopping-cart-67954.firebaseapp.com
+       -run: 
+          name: Report 
+          command: mvn allure:serve
+        - store_test_results:
+           path: test-results
+  
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
