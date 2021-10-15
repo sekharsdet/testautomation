@@ -1,5 +1,6 @@
 package com.automation.pageObjects;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -41,4 +42,10 @@ public class BasePage {
         waitForVisibilityOf(element);
         element.click();
     }
+
+    protected String getAlertText() {
+        Alert alert = driver.switchTo().alert();
+        return alert.getText();
+    }
+
 }
