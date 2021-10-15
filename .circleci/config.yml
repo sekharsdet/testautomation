@@ -26,10 +26,10 @@ jobs:
       - run:
           name: Test
           command: mvn clean test allure:report -D suiteXmlFile=testng.xml -D url=https://react-shopping-cart-67954.firebaseapp.com
-       -run: 
+      - run: 
           name: Report 
           command: mvn allure:serve
-        - store_test_results:
+      - store_test_results:
            path: test-results
   
 
