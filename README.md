@@ -36,8 +36,7 @@
 
 # Steps to execute the project:
 
-* Method 1: Command Line:
-    * Execute via command line by entering below command.
+* Execute via command line by entering below command.
 
   Please go to the project folder and execute below command on command line.
 
