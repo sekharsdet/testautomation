@@ -31,6 +31,8 @@ jobs:
           command: mvn allure:serve
       - store_test_results:
            path: test-results
+      - store_artifacts:
+          path: /tmp/artifacts
   
 
 # Invoke jobs via workflows
